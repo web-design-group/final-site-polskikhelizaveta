@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная — Студия</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script type="module" src="./js/bootstrap.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg site-navbar">
+      <div class="container site-navbar__container d-flex flex-wrap align-items-center justify-content-between">
+        <a
+          class="logo-link site-navbar__logo site-navbar__logo--mobile d-lg-none"
+          href="index.html"
+          aria-label="На главную"
+        >
+          <img class="logo-img" src="icons/Logo.svg" alt="Студия" width="115" height="84" decoding="async" />
+        </a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Открыть меню"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse site-navbar__collapse" id="mainNav">
+          <div class="site-navbar__distribute" role="navigation" aria-label="Разделы сайта">
+            <a
+              class="logo-link site-navbar__logo site-navbar__logo--desktop d-none d-lg-flex"
+              href="index.html"
+              aria-label="На главную"
+            >
+              <img class="logo-img" src="icons/Logo.svg" alt="Студия" width="115" height="84" decoding="async" />
+            </a>
+              <a
+                class="nav-link site-navbar__link"
+                href="about.html"
+                
+              >О студии</a>
+              <a
+                class="nav-link site-navbar__link"
+                href="master-classes.html"
+                
+              >Мастер-классы</a>
+              <a
+                class="nav-link site-navbar__link"
+                href="subscriptions.html"
+                
+              >Абонементы</a>
+              <a
+                class="nav-link site-navbar__link"
+                href="holidays.html"
+                
+              >Праздники</a>
+              <a
+                class="nav-link site-navbar__link"
+                href="contacts.html"
+                
+              >Контакты</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="main-page flex-grow-1">
+      <div class="preview__wrapper">
+        <section class="preview">
+          <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+              <img class="preview__image" src="images/russian_soul.svg" alt="Logo">
+              <h1 class="preview__title">Студия керамики и живописи</h1>
+              <p class="preview__description text-center">
+                Создавайте собственные произведения искусства, ощущая связь <br>
+                с культурной историей России
+              </p>
+              <div class="preview__buttons">
+                <button class="btn btn-primary" type="button" data-open-modal>Записаться</button>
+                <button class="btn btn-primary-light" type="button" data-open-schedule>Расписание</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6 d-flex justify-content-end">
+              <img width="554" height="616" src="images/main_about.jpg" alt="About">
+            </div>
+            <div class="col-12 col-lg-6">
+              <h2 class="about__title">
+                О мастерской <br>
+                <span class="about__title-span">
+                  Русская Душа
+                </span>
+              </h2>
+              <p>
+                Наши мастер-классы включают
+              </p>
+              <ul>
+                <li>
+                  ручную лепку
+                </li>
+                <li>
+                  роспись готовых изделий
+                </li>
+                <li>
+                  рисование гуашью по холсту 
+                </li>
+              </ul>
+              <p>
+                Мы помогаем вашим детям развивать не только мелкую 
+                моторику, но и легче ориентироваться в социальной жизни и стать более 
+                открытым человеком, так как у нас есть групповые <br> занятия/мастер-классы
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="master-classes text-center">
+        <div class="container">
+          <h2 class="master-classes__title">
+            Мастер-классы
+          </h2>
+          <div class="master-classes__cards">
+            <div class="master-classes__card">
+              <h3 class="master-classes__card-title">
+                Лепка <br> из глины
+              </h3>
+              <p class="master-classes__card-description">
+                Ручная лепка игрушек 
+                или посуды из глины <br> 
+                +
+                <br>
+                Роспись ангобами
+                и покрытие прозрачной 
+                глазурью
+              </p>
+              <p class="master-classes__card-info">
+                <b>Детские группы до 10 человек</b>
+              </p>
+              <p class="master-classes__card-price">
+                <span class="master-classes__card-price-number">2000 руб</span><span class="master-classes__card-price-time">/ 120 мин</span>
+              </p>
+              <button class="btn btn-primary" type="button" data-open-modal data-modal-type="master">Записаться</button>
+
+            </div>
+            <div class="master-classes__card">
+              <h3 class="master-classes__card-title">
+                Пейзажная живопись
+              </h3>
+              <p class="master-classes__card-description">
+                Ручная лепка игрушек 
+                или посуды из глины <br> 
+                +
+                <br>
+                Роспись ангобами
+                и покрытие прозрачной 
+                глазурью
+              </p>
+              <p class="master-classes__card-info">
+                <b>Детские группы до 10 человек</b>
+              </p>
+              <p class="master-classes__card-price">
+                <span class="master-classes__card-price-number">2000 руб</span><span class="master-classes__card-price-time">/ 120 мин</span>
+              </p>
+              <button class="btn btn-primary" type="button" data-open-modal data-modal-type="master">Записаться</button>
+
+            </div>
+            <div class="master-classes__card">
+              <h3 class="master-classes__card-title">
+                Семейный <br> мастер-класс
+              </h3>
+              <p class="master-classes__card-description">
+                Ручная лепка игрушек 
+                или посуды из глины <br> 
+                +
+                <br>
+                Роспись ангобами
+                и покрытие прозрачной 
+                глазурью
+              </p>
+              <p class="master-classes__card-info">
+                <b>Детские группы до 10 человек</b>
+              </p>
+              <p class="master-classes__card-price">
+                <span class="master-classes__card-price-number">2000 руб</span><span class="master-classes__card-price-time">/ 120 мин</span>
+              </p>
+              <button class="btn btn-primary" type="button" data-open-modal data-modal-type="master">Записаться</button>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="holiday text-center">
+        <div class="container">
+          <h2 class="holiday__title">
+            Организуем незабываемый праздник для вас
+          </h2>
+          <div class="holiday__cards">
+            <div class="holiday__card">
+              <h3 class="holiday__card-title">
+                День <br>Рождения
+              </h3>
+              <p class="holiday__card-description">
+                Ручная лепка игрушек 
+                или посуды из глины <br> 
+                +
+                <br>
+                Роспись ангобами
+                и покрытие прозрачной 
+                глазурью
+              </p>
+              <p class="holiday__card-info">
+                <b>Детские группы до 10 человек</b>
+              </p>
+              <p class="holiday__card-price">
+                <span class="holiday__card-price-number">2000 руб</span><span class="holiday__card-price-time">/ 120 мин</span>
+              </p>
+              <button class="btn btn-primary" type="button" data-open-modal data-modal-type="holiday">Записаться</button>
+
+            </div>
+            <div class="holiday__card">
+              <h3 class="holiday__card-title">
+                Школьные&nbsp;классы <br>
+                и детские сады
+              </h3>
+              <p class="holiday__card-description">
+                Ручная лепка игрушек 
+                или посуды из глины <br> 
+                +
+                <br>
+                Роспись ангобами
+                и покрытие прозрачной 
+                глазурью
+              </p>
+              <p class="holiday__card-info">
+                <b>Детские группы до 10 человек</b>
+              </p>
+              <p class="holiday__card-price">
+                <span class="holiday__card-price-number">2000 руб</span><span class="holiday__card-price-time">/ 120 мин</span>
+              </p>
+              <button class="btn btn-primary" type="button" data-open-modal data-modal-type="holiday">Записаться</button>
+
+            </div>
+            <div class="holiday__card">
+              <h3 class="holiday__card-title">
+                Выездные <br> мастер-классы
+              </h3>
+              <p class="holiday__card-description">
+                Ручная лепка игрушек 
+                или посуды из глины <br> 
+                +
+                <br>
+                Роспись ангобами
+                и покрытие прозрачной 
+                глазурью
+              </p>
+              <p class="holiday__card-info">
+                <b>Детские группы до 10 человек</b>
+              </p>
+              <p class="holiday__card-price">
+                <span class="holiday__card-price-number">2000 руб</span><span class="holiday__card-price-time">/ 120 мин</span>
+              </p>
+              <button class="btn btn-primary" type="button" data-open-modal data-modal-type="holiday">Записаться</button>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us">
+        <h2 class="about-us__title">Мы ждем вас в нашей уютной студии</h2>
+        <div class="about-us__card">
+          <p class="about-us__card-title">У нас:</p>
+          <p class="about-us__card-description">
+            Индивидуальный формат. <br>
+            На занятии будет только Ваша компания и мастер.
+            Изготовления изделия на Ваш выбор. <br>
+            Каждый изготовит по одному изделию на Вашу фантазию. <br>
+            Самые лучшие мастера и уютная атмосфера. <br>
+            У нас на мастер классах вы погрузитесь в творчество <br>
+            и медитативные процессы работы с глиной.
+          </p>
+        </div>
+        <div class="about-us__foto">
+          <img src="images/us_foto_1.png" alt="About Us Foto">
+          <img src="images/us_foto_2.png" alt="About Us Foto">
+          <img src="images/us_foto_3.png" alt="About Us Foto">
+          <img src="images/us_foto_4.png" alt="About Us Foto">
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div id="my-slider">
+            <div>
+              <div class="reviews__slide">
+                <img src="images/alexeeva.png" alt="Review">
+                <div class="reviews__slide-content">
+                  <p>
+                    Молодой человек устроил мне свидание в этой арт-студии и я была безумно счастлива!<br>
+                    Всё настолько прошло круто, что в конце этого занятия мне сделали предложение! <br>
+                    Поэтому от этой мастерской, которая находится на Садовой, останутся только хорошие воспоминания)) 
+                  </p>
+                  <p>
+                    Анна Алексеева
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="reviews__slide">
+                <img src="images/semenovna.png" alt="Review">
+                <div class="reviews__slide-content">
+                  <p>
+                    Ходили с детьми на мастер-класс (дочек пригласили на день рождение их подружка), очень понравилось!<br>
+                    Большая и уютная мастерская, сотрудников-преподавателей было двое: Михаил и Евгения максимально ответственно подошли к проведению праздника
+                  </p>
+                  <p>
+                    Клавдия Семеновна
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="reviews__slide">
+                <img src="images/savicheva.png" alt="Алена Савичева">
+                <div class="reviews__slide-content">
+                  <p>
+                    Пришла на единичный мастер-класс, так как у меня имелся подарочный сертификат на одно занятие, и я поняла, что приду сюда ещё раз!<br>
+                    Была в мастерской на Соляном переулке и всё время не могла отвести взгляд от вида за окном. А также приобрела одну из керамических работ своего преподавателя).
+                  </p>
+                  <p>
+                    Алена Савичева
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="placement">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="placement__title">Где будут проходить занятия</h2>
+            </div>
+            <div class="col-12">
+              <div class="placement__info">
+                <div class="placement__foto">
+                  <img src="images/placement_1.png" alt="Placement">
+                  <p class="placement__info-title"><b>Садовая 7 дом 3</b></p>
+                  <p>
+                    Просторная студия с уютным интерьером, с лепниной и печами, изготавливаемыми в Восточной Азии: гостиная, 3 больших мастерских для групповых занятий и лекторий
+                    Панорамные окна, выходящие на центр Санкт-Петербурга
+                    <br><br>
+                    Бесплатные чай/вода и сладости
+                    <br>
+                    В продаже также собственный мерч и изделия мастеров 
+                  </p>
+                </div>
+                <div class="placement__foto">
+                  <img src="images/placement_2.png" alt="Placement">
+                  <p class="placement__info-title"><b>Соляной переулок 13, дом 11</b></p>
+                  <p>
+                    Две “домашние” мастерские в стиле лофт, расположенные возле мастерских Академии Штиглица
+                    <br><br>
+                    Бесплатные чай/вода со сладостями
+                    Продажа собственного мерча и изделий мастеров
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button class="btn btn-primary" type="button" data-open-modal>заказать звонок</button>
+            <div class="text-center">
+              <img class="logo-img" src="icons/Logo.svg" alt="Студия" width="207" height="157" decoding="async">
+            </div>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-3">
+            <div class="footer__links d-flex flex-column gap-2">
+              <a class="footer__link" href="about.html">О студии</a>
+              <a class="footer__link" href="master-classes.html">Мастер-классы</a>
+              <a class="footer__link" href="subscriptions.html">Абонементы</a>
+              <a class="footer__link" href="holidays.html">Праздники</a>
+              <a class="footer__link" href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer__socials d-flex gap-2">
+              <a class="footer__socials-phone" href="tel:+78122977281">+7 (812) 297-72-81</a>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="footer__info">
+              <p class="footer__address">Работаем ежедневно С 9:00 до 21:00</p>
+              <p class="footer__address">
+                г. Санкт-Петербург <br> 
+                ул. Садовая 7, дом 3 <br> 
+                ул. Соляной Переулок 13, дом 11
+              </p>
+            </div>
+            <div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade booking-modal"
+        id="bookingModal"
+        tabindex="-1"
+        aria-labelledby="bookingModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close booking-modal__close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            ></button>
+            <img id="bookingModalImage" src="images/modal_image.png" alt="Иллюстрация формы записи" width="100%" decoding="async">
+            <div class="modal-body">
+              <form id="bookingModalForm" novalidate>
+                <div class="booking-modal__header">
+                  <h3 id="bookingModalLabel">Запись на мастер-класс</h3>
+                  <a href="tel:+78122977281">+7 (812) 297-72-81</a>
+                </div>
+                <div class="booking-modal__content">
+                  <p class="booking-modal__lead booking-modal__lead--thin">Или заполните форму</p>
+                  <p class="booking-modal__lead">Выберите адрес студии:</p>
+                  <div class="booking-modal__address">
+                    <label class="booking-modal__address-item">
+                      <input
+                        class="booking-modal__address-radio"
+                        type="radio"
+                        name="studio-address"
+                        value="garden"
+                        checked
+                      >
+                      <span class="booking-modal__address-text">
+                        Ул. Соляной переулок 13, дом 11
+                      </span>
+                    </label>
+                    <label class="booking-modal__address-item">
+                      <input
+                        class="booking-modal__address-radio"
+                        type="radio"
+                        name="studio-address"
+                        value="solyanoy"
+                      >
+                      <span class="booking-modal__address-text">Ул. Садовая 7, дом 3</span>
+                    </label>
+                  </div>
+                </div>
+                <p class="booking-modal__lead">Как с Вами связаться?</p>
+                <input
+                  id="bookingNameInput"
+                  class="input mb-4"
+                  type="text"
+                  placeholder="Введите имя"
+                  required
+                >
+                <input
+                  id="bookingPhoneInput"
+                  class="input mb-4"
+                  type="tel"
+                  inputmode="tel"
+                  autocomplete="tel"
+                  data-phone-input
+                  placeholder="Введите номер"
+                  required
+                >
+                <button class="btn btn-form w-100" type="submit">Записаться</button>
+                <p id="bookingRequiredError" class="booking-modal__required-error">Поля обязательны для заполнения.</p>
+                <p class="booking-modal__privacy">Нажимая кнопку “Записаться”, вы принимаете условия политики конфиденциальности</p>
+              </form>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade schedule-modal"
+        id="scheduleModal"
+        tabindex="-1"
+        aria-labelledby="scheduleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close schedule-modal__close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            ></button>
+            <div class="modal-body">
+              <h3 class="schedule-modal__title" id="scheduleModalLabel">Расписание</h3>
+              <div class="schedule-modal__columns">
+                <div class="schedule-modal__column">
+                  <p class="schedule-modal__address">Ул. Садовая 7, д. 3</p>
+                  <div class="schedule-modal__teachers">
+                    <div class="schedule-modal__teacher">
+                      <p class="schedule-modal__name">Арина Смирнова</p>
+                      <p class="schedule-modal__time">
+                        Понедельник - среда<br>
+                        с 9:00 до 21:00
+                      </p>
+                    </div>
+                    <div class="schedule-modal__teacher">
+                      <p class="schedule-modal__name">Евгения Дубкова</p>
+                      <p class="schedule-modal__time">
+                        Понедельник - среда<br>
+                        с 9:00 до 21:00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-modal__column">
+                  <p class="schedule-modal__address">Ул. Соляной переулок 13, д. 11</p>
+                  <div class="schedule-modal__teachers">
+                    <div class="schedule-modal__teacher">
+                      <p class="schedule-modal__name">Олег Михайлов</p>
+                      <p class="schedule-modal__time">
+                        Понедельник - среда<br>
+                        с 9:00 до 21:00
+                      </p>
+                    </div>
+                    <div class="schedule-modal__teacher">
+                      <p class="schedule-modal__name">Екатерина Балашова</p>
+                      <p class="schedule-modal__time">
+                        Четверг - воскресенье<br>
+                        с 9:00 до 21:00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

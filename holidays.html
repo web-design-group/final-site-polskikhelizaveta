@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Праздники — Студия</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script type="module" src="./js/bootstrap.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg site-navbar">
+      <div class="container site-navbar__container d-flex flex-wrap align-items-center justify-content-between">
+        <a
+          class="logo-link site-navbar__logo site-navbar__logo--mobile d-lg-none"
+          href="index.html"
+          aria-label="На главную"
+        >
+          <img class="logo-img" src="icons/Logo.svg" alt="Студия" width="115" height="84" decoding="async" />
+        </a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Открыть меню"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse site-navbar__collapse" id="mainNav">
+          <div class="site-navbar__distribute" role="navigation" aria-label="Разделы сайта">
+            <a
+              class="logo-link site-navbar__logo site-navbar__logo--desktop d-none d-lg-flex"
+              href="index.html"
+              aria-label="На главную"
+            >
+              <img class="logo-img" src="icons/Logo.svg" alt="Студия" width="115" height="84" decoding="async" />
+            </a>
+              <a
+                class="nav-link site-navbar__link"
+                href="about.html"
+                
+              >О студии</a>
+              <a
+                class="nav-link site-navbar__link"
+                href="master-classes.html"
+                
+              >Мастер-классы</a>
+              <a
+                class="nav-link site-navbar__link"
+                href="subscriptions.html"
+                
+              >Абонементы</a>
+              <a
+                class="nav-link site-navbar__link active"
+                href="holidays.html"
+                aria-current="page"
+              >Праздники</a>
+              <a
+                class="nav-link site-navbar__link"
+                href="contacts.html"
+                
+              >Контакты</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="holidays">
+      <section class="holidays__main mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="holidays__header">
+                <h1>Праздники</h1>
+              </div>
+              <p class="holidays__main-description">
+                Предлагаем Вам устроить незабываемый праздник!
+              </p>
+              <p class="holidays__description">
+                Организуем по вашим желаниям уникальный праздник в виде мастер-класса: дни рождения, классы для школьных групп и детских садов. Они наполнены приятной атмосферой, доброжелательным настроем 
+                и радостными моментами. Вы и ваши дети останутся довольными! Также по окончании праздника вы можем предоставить вам, по вашему желанию, общую фотографию на картриджный аппарат.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="holidays__cards">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="holidays__cards-header">
+                <h2>Чудесные праздники</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row gap-5">
+            <div class=" holidays__card col-12">
+              <p class="holidays__card-title">День Рождения</p>
+              <p class="holidays__card-description">Хотите устроить ребёнку незабываемый праздник? Тогда вы точно по адресу! Наши преподаватели помогут вашему ребёнку окунуться в мир керамики и живописи, создав индивидуальную программу на основе возраста и предпочтений вашего малыша.</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <span>120 <b>минут</b> - 2000 <b>руб</b>.</span>
+                <button class="btn btn-primary" type="button" data-open-modal data-modal-type="holiday">Записаться</button>
+              </div>
+            </div>
+            <div class=" holidays__card col-12">
+              <p class="holidays__card-title">Школьные классы и детские сады</p>
+              <p class="holidays__card-description">
+                На данных мастер-классах школьные/детские группы смогут развить сразу 2 полушария, так как во время лепки работают сразу 2 руки и развивается мелкая моторика! А на мастер-классах по живописи ваши детки учатся осваивать разные техники и развить собственный стиль.
+              </p>
+              <div class="d-flex justify-content-between align-items-end">
+                <span>120 <b>минут</b> - 2000 <b>руб</b>.</span>
+                <button class="btn btn-primary" type="button" data-open-modal data-modal-type="holiday">Записаться</button>
+              </div>
+            </div>
+            <div class=" holidays__card col-12">
+              <p class="holidays__card-title">Выездные мастер-классы</p>
+              <p class="holidays__card-description">
+                Наша студия сможет предоставить вам праздник не только в наших мастерских, но и там, где вы пожелаете! Выездные мастер-классы могут проводится, как на природе для больших компаний (до 20 чел.), так и в помещении в небольшой группы (до 10.чел.)
+              </p>
+              <div class="d-flex justify-content-between align-items-end">
+                <span>120 <b>минут</b> - 2000 <b>руб</b>.</span>
+                <button class="btn btn-primary" type="button" data-open-modal data-modal-type="holiday">Записаться</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="holidays__photos">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="holidays__photos-header">
+                <h2>Фото с наших праздников</h2>
+              </div>
+            </div>
+            <div class="col-4">
+              <img class="holidays__photo" src="images/holidays-1.png" alt="photo">
+            </div>
+            <div class="col-4">
+              <img class="holidays__photo" src="images/holidays-2.png" alt="photo">
+            </div>
+            <div class="col-4">
+              <img class="holidays__photo" src="images/holidays-3.png" alt="photo">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-10">
+              <div class="holidays__form">
+                <div class="row">
+                  <div class="col-12 holidays__form-header mb-3">
+                    <h3 class="mb-3">
+                      Организуем для Вас незабываемый праздник!
+                    </h3>
+                    <p>Оставьте заявку и мы перезвоним вам в ближайшее время</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-5">
+                    <img class="w-100 h-100" src="images/master-classes__form-img.png" alt="logo">
+                  </div>
+                  <div class="col-7">
+                    <form class="holidays__form-item" action="">
+                      <input class="input mb-2" type="text" placeholder="Введите имя">
+                      <input class="input" type="tel" inputmode="tel" autocomplete="tel" data-phone-input placeholder="Введите номер">
+                      <p>Нажимая кнопку “Записаться”, вы принимаете условия политики конфиденциальности</p>
+                      <button class="btn btn-primary" type="button">Записаться</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <button class="btn btn-primary" type="button" data-open-modal>заказать звонок</button>
+            <div class="text-center">
+              <img class="logo-img" src="icons/Logo.svg" alt="Студия" width="207" height="157" decoding="async">
+            </div>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-3">
+            <div class="footer__links d-flex flex-column gap-2">
+              <a class="footer__link" href="about.html">О студии</a>
+              <a class="footer__link" href="master-classes.html">Мастер-классы</a>
+              <a class="footer__link" href="subscriptions.html">Абонементы</a>
+              <a class="footer__link" href="holidays.html">Праздники</a>
+              <a class="footer__link" href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer__socials d-flex gap-2">
+              <a class="footer__socials-phone" href="tel:+78122977281">+7 (812) 297-72-81</a>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="footer__info">
+              <p class="footer__address">Работаем ежедневно С 9:00 до 21:00</p>
+              <p class="footer__address">
+                г. Санкт-Петербург <br> 
+                ул. Садовая 7, дом 3 <br> 
+                ул. Соляной Переулок 13, дом 11
+              </p>
+            </div>
+            <div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade booking-modal"
+        id="bookingModal"
+        tabindex="-1"
+        aria-labelledby="bookingModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close booking-modal__close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            ></button>
+            <img id="bookingModalImage" src="images/modal_image.png" alt="Иллюстрация формы записи" width="100%" decoding="async">
+            <div class="modal-body">
+              <form id="bookingModalForm" novalidate>
+                <div class="booking-modal__header">
+                  <h3 id="bookingModalLabel">Запись на мастер-класс</h3>
+                  <a href="tel:+78122977281">+7 (812) 297-72-81</a>
+                </div>
+                <div class="booking-modal__content">
+                  <p class="booking-modal__lead booking-modal__lead--thin">Или заполните форму</p>
+                  <p class="booking-modal__lead">Выберите адрес студии:</p>
+                  <div class="booking-modal__address">
+                    <label class="booking-modal__address-item">
+                      <input
+                        class="booking-modal__address-radio"
+                        type="radio"
+                        name="studio-address"
+                        value="garden"
+                        checked
+                      >
+                      <span class="booking-modal__address-text">
+                        Ул. Соляной переулок 13, дом 11
+                      </span>
+                    </label>
+                    <label class="booking-modal__address-item">
+                      <input
+                        class="booking-modal__address-radio"
+                        type="radio"
+                        name="studio-address"
+                        value="solyanoy"
+                      >
+                      <span class="booking-modal__address-text">Ул. Садовая 7, дом 3</span>
+                    </label>
+                  </div>
+                </div>
+                <p class="booking-modal__lead">Как с Вами связаться?</p>
+                <input
+                  id="bookingNameInput"
+                  class="input mb-4"
+                  type="text"
+                  placeholder="Введите имя"
+                  required
+                >
+                <input
+                  id="bookingPhoneInput"
+                  class="input mb-4"
+                  type="tel"
+                  inputmode="tel"
+                  autocomplete="tel"
+                  data-phone-input
+                  placeholder="Введите номер"
+                  required
+                >
+                <button class="btn btn-form w-100" type="submit">Записаться</button>
+                <p id="bookingRequiredError" class="booking-modal__required-error">Поля обязательны для заполнения.</p>
+                <p class="booking-modal__privacy">Нажимая кнопку “Записаться”, вы принимаете условия политики конфиденциальности</p>
+              </form>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade schedule-modal"
+        id="scheduleModal"
+        tabindex="-1"
+        aria-labelledby="scheduleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close schedule-modal__close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            ></button>
+            <div class="modal-body">
+              <h3 class="schedule-modal__title" id="scheduleModalLabel">Расписание</h3>
+              <div class="schedule-modal__columns">
+                <div class="schedule-modal__column">
+                  <p class="schedule-modal__address">Ул. Садовая 7, д. 3</p>
+                  <div class="schedule-modal__teachers">
+                    <div class="schedule-modal__teacher">
+                      <p class="schedule-modal__name">Арина Смирнова</p>
+                      <p class="schedule-modal__time">
+                        Понедельник - среда<br>
+                        с 9:00 до 21:00
+                      </p>
+                    </div>
+                    <div class="schedule-modal__teacher">
+                      <p class="schedule-modal__name">Евгения Дубкова</p>
+                      <p class="schedule-modal__time">
+                        Понедельник - среда<br>
+                        с 9:00 до 21:00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="schedule-modal__column">
+                  <p class="schedule-modal__address">Ул. Соляной переулок 13, д. 11</p>
+                  <div class="schedule-modal__teachers">
+                    <div class="schedule-modal__teacher">
+                      <p class="schedule-modal__name">Олег Михайлов</p>
+                      <p class="schedule-modal__time">
+                        Понедельник - среда<br>
+                        с 9:00 до 21:00
+                      </p>
+                    </div>
+                    <div class="schedule-modal__teacher">
+                      <p class="schedule-modal__name">Екатерина Балашова</p>
+                      <p class="schedule-modal__time">
+                        Четверг - воскресенье<br>
+                        с 9:00 до 21:00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
