@@ -2749,13 +2749,6 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
-  const scheduleModalEl = document.getElementById("scheduleModal");
-  if (scheduleModalEl) {
-    const scheduleModal = new Modal(scheduleModalEl);
-    document.querySelectorAll("[data-open-schedule]").forEach((btn) => {
-      btn.addEventListener("click", () => scheduleModal.show());
-    });
-  }
   document.querySelectorAll(".input--file input[type='file']").forEach((input) => {
     const wrap = input.closest(".input--file");
     const labelEl = wrap == null ? void 0 : wrap.querySelector(".input__file-label");

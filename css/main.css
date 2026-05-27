@@ -11074,6 +11074,18 @@ textarea.form-control-lg {
   outline: 0;
   box-shadow: none;
 }
+@media (max-width: 767.98px) {
+  .btn-primary,
+  .btn-primary-light {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+  .btn-form {
+    padding: 14px 20px;
+    font-size: 18px;
+  }
+}
 .site-navbar .nav-link {
   font-size: 24px;
   font-weight: 400;
@@ -11138,6 +11150,12 @@ textarea.form-control-lg {
   border-radius: 0.25rem;
 }
 @media (max-width: 991.98px) {
+  .site-navbar .nav-link {
+    font-size: 18px;
+  }
+  .site-navbar__collapse {
+    padding-bottom: 0.5rem;
+  }
   .site-navbar__link {
     padding: 0.5rem 0.75rem;
   }
@@ -11260,7 +11278,7 @@ textarea.form-control-lg {
 .booking-modal__success {
   padding: 80px;
   border-radius: 36px;
-  background-image: url("images/subscription_header_bg.png");
+  background-image: url("../images/subscription_header_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11289,7 +11307,7 @@ textarea.form-control-lg {
 .schedule-modal .modal-content {
   position: relative;
   border-radius: 36px;
-  background-image: url("images/master_class.png");
+  background-image: url("../images/master_class.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11348,6 +11366,123 @@ textarea.form-control-lg {
   color: #fff;
   font-weight: 700;
 }
+@media (max-width: 991.98px) {
+  .footer {
+    padding: 40px 0;
+  }
+  .footer .btn {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .footer__socials {
+    margin-top: 12px;
+    justify-content: flex-start;
+  }
+  .booking-modal .modal-body {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .booking-modal__success {
+    padding: 48px 24px;
+  }
+  .schedule-modal .modal-body {
+    padding: 40px 28px;
+  }
+  .schedule-modal__columns {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer {
+    text-align: center;
+    padding: 32px 0;
+  }
+  .footer .logo-img {
+    max-width: 130px;
+  }
+  .footer__links {
+    align-items: center;
+  }
+  .footer__socials {
+    justify-content: center;
+  }
+  .footer__address {
+    font-size: 16px;
+  }
+  .modal#bookingModal,
+  .modal#scheduleModal {
+    --bs-modal-margin: 0.75rem;
+  }
+  .booking-modal .modal-content {
+    border-radius: 20px;
+  }
+  .booking-modal .modal-body {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .booking-modal__header {
+    margin-bottom: 20px;
+  }
+  .booking-modal__header h3, .booking-modal__header .h3 {
+    font-size: 28px;
+  }
+  .booking-modal__header a {
+    font-size: 16px;
+  }
+  .booking-modal__lead {
+    font-size: 18px;
+  }
+  .booking-modal__address {
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .booking-modal__address-text {
+    padding: 12px 14px;
+    font-size: 16px;
+  }
+  .booking-modal__privacy {
+    font-size: 12px;
+  }
+  .booking-modal__success {
+    padding: 32px 16px;
+    border-radius: 20px;
+  }
+  .booking-modal__success-title {
+    font-size: 26px;
+  }
+  .booking-modal__success-text {
+    font-size: 16px;
+  }
+  .schedule-modal .modal-content {
+    border-radius: 20px;
+  }
+  .schedule-modal .modal-body {
+    padding: 36px 14px 20px;
+  }
+  .schedule-modal__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  .schedule-modal__column {
+    padding: 14px;
+  }
+  .schedule-modal__address {
+    font-size: 18px;
+  }
+  .schedule-modal__teachers {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    white-space: normal;
+  }
+  .schedule-modal__name {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .schedule-modal__time {
+    font-size: 15px;
+  }
+}
 .input {
   background-color: white;
   border: 1px solid #000000;
@@ -11390,10 +11525,16 @@ textarea.form-control-lg {
   cursor: pointer;
   font-size: 0;
 }
+@media (max-width: 767.98px) {
+  .input {
+    font-size: 18px;
+    padding: 14px 18px;
+  }
+}
 .main-page .preview {
   position: relative;
   z-index: 1;
-  background-image: url("images/main_prev_bg.jpg");
+  background-image: url("../images/main_prev_bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11435,7 +11576,7 @@ textarea.form-control-lg {
   width: 100%;
   height: 556px;
   transform: translateX(-50%);
-  background-image: url(images/bahroma.png);
+  background-image: url("../images/bahroma.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -11456,7 +11597,7 @@ textarea.form-control-lg {
   margin-bottom: 108px;
 }
 .main-page .master-classes {
-  background-image: url("images/master_class.png");
+  background-image: url("../images/master_class.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11501,7 +11642,7 @@ textarea.form-control-lg {
   color: #000;
 }
 .main-page .holiday {
-  background-image: url("images/holiday_bg.png");
+  background-image: url("../images/holiday_bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11575,7 +11716,7 @@ textarea.form-control-lg {
   gap: 21px;
 }
 .main-page .reviews {
-  background-image: url("images/reviews_bg.png");
+  background-image: url("../images/reviews_bg.png");
   background-position: center;
   background-size: cover;
   padding: 136px 0;
@@ -11623,8 +11764,198 @@ textarea.form-control-lg {
   flex-direction: column;
   gap: 20px;
 }
+@media (max-width: 991.98px) {
+  .main-page .preview {
+    padding-top: 90px;
+  }
+  .main-page .preview__title {
+    margin-bottom: 48px;
+  }
+  .main-page .preview__description {
+    margin-bottom: 48px;
+  }
+  .main-page .preview__buttons {
+    margin-bottom: 100px;
+  }
+  .main-page .preview__wrapper {
+    padding-bottom: 120px;
+    margin-bottom: 56px;
+  }
+  .main-page .about {
+    margin-bottom: 120px;
+  }
+  .main-page .about__title {
+    font-size: 48px;
+    margin: 28px 0 32px;
+  }
+  .main-page .about__description {
+    margin-bottom: 48px;
+  }
+  .main-page .master-classes,
+  .main-page .holiday {
+    padding: 88px 0;
+  }
+  .main-page .master-classes__title,
+  .main-page .holiday__title {
+    font-size: 44px;
+    margin-bottom: 40px;
+  }
+  .main-page .master-classes__cards,
+  .main-page .holiday__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-page .about-us,
+  .main-page .reviews,
+  .main-page .placement {
+    padding: 90px 0;
+  }
+  .main-page .about-us__title,
+  .main-page .reviews__title,
+  .main-page .placement__title {
+    font-size: 44px;
+    margin-bottom: 40px;
+  }
+  .main-page .about-us__foto {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .main-page .reviews__slide {
+    max-width: 100%;
+    padding: 28px;
+  }
+  .main-page .placement__info {
+    flex-direction: column;
+    gap: 28px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1399.98px) {
+  .main-page .master-classes__cards,
+  .main-page .holiday__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-page .about-us__foto {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+@media (max-width: 767.98px) {
+  .main-page .preview {
+    margin: 0 12px;
+    padding-top: 56px;
+  }
+  .main-page .preview__title {
+    font-size: 30px;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+  .main-page .preview__description {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+  .main-page .preview__description br {
+    display: none;
+  }
+  .main-page .preview__buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    margin-bottom: 64px;
+  }
+  .main-page .preview__wrapper {
+    padding-bottom: 72px;
+    margin-bottom: 36px;
+  }
+  .main-page .preview__wrapper::after {
+    height: 240px;
+  }
+  .main-page .about {
+    margin-bottom: 70px;
+  }
+  .main-page .about__title {
+    font-size: 34px;
+    margin: 16px 0 20px;
+  }
+  .main-page .about__description {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  .main-page .master-classes,
+  .main-page .holiday {
+    padding: 56px 0;
+  }
+  .main-page .master-classes__title,
+  .main-page .holiday__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .main-page .master-classes__card,
+  .main-page .holiday__card {
+    max-width: 100%;
+    border-width: 8px;
+    border-radius: 18px;
+    padding: 20px;
+  }
+  .main-page .master-classes__card-title,
+  .main-page .holiday__card-title {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .main-page .master-classes__card-description, .main-page .master-classes__card-info,
+  .main-page .holiday__card-description,
+  .main-page .holiday__card-info {
+    margin-bottom: 16px;
+  }
+  .main-page .master-classes__card-price-number,
+  .main-page .holiday__card-price-number {
+    font-size: 26px;
+  }
+  .main-page .about-us {
+    padding: 56px 0;
+  }
+  .main-page .about-us__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .main-page .about-us__card {
+    margin-bottom: 24px;
+  }
+  .main-page .about-us__card-description {
+    padding: 0 16px 18px;
+  }
+  .main-page .about-us__foto img {
+    width: calc(50% - 6px);
+  }
+  .main-page .reviews {
+    padding: 56px 0;
+  }
+  .main-page .reviews__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .main-page .reviews__slide {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    gap: 14px;
+  }
+  .main-page .reviews__slide img {
+    width: 110px;
+    height: 110px;
+  }
+  .main-page .placement {
+    padding: 56px 0;
+  }
+  .main-page .placement__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
 .about-page .about {
-  background-image: url("images/about_bg.png");
+  background-image: url("../images/about_bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11658,7 +11989,7 @@ textarea.form-control-lg {
   max-height: 691px;
   width: 100%;
   height: 691px;
-  background-image: url("images/about_header_img.png");
+  background-image: url("../images/about_header_img.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11697,7 +12028,7 @@ textarea.form-control-lg {
   border: 2px solid var(--studio-sand);
 }
 .about-page .masters {
-  background-image: url("images/masters_bg.png");
+  background-image: url("../images/masters_bg.png");
   color: white;
   padding: 140px 0;
 }
@@ -11710,6 +12041,54 @@ textarea.form-control-lg {
 }
 .about-page .masters__img {
   width: 100%;
+}
+@media (max-width: 767.98px) {
+  .about-page .about {
+    padding: 56px 0;
+  }
+  .about-page .about__title {
+    width: 100%;
+    font-size: 30px;
+    padding: 22px 16px;
+    margin-bottom: 24px;
+  }
+  .about-page .about__content-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .about-page .preview {
+    height: 280px;
+    border-width: 4px;
+    border-radius: 140px;
+    margin-bottom: 32px;
+  }
+  .about-page .master-classes {
+    padding: 56px 0;
+  }
+  .about-page .master-classes__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .about-page .master-classes__subtitle {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .about-page .master-classes__item {
+    padding: 18px;
+  }
+  .about-page .master-classes__item-title {
+    font-size: 28px;
+  }
+  .about-page .masters {
+    padding: 56px 0;
+  }
+  .about-page .masters__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .about-page .masters__about {
+    margin-bottom: 24px;
+  }
 }
 .master-classes__header {
   display: flex;
@@ -11728,7 +12107,7 @@ textarea.form-control-lg {
   text-transform: uppercase;
 }
 .master-classes-info {
-  background-image: url("images/master-classes-page-bg.png");
+  background-image: url("../images/master-classes-page-bg.png");
   padding: 140px 0;
 }
 .master-classes__card-title {
@@ -11794,6 +12173,50 @@ textarea.form-control-lg {
 .master-classes .example-works__img {
   border-radius: 8px;
 }
+@media (max-width: 767.98px) {
+  .master-classes__header {
+    padding: 56px 0 32px;
+  }
+  .master-classes__header h1, .master-classes__header .h1 {
+    font-size: 32px;
+    padding: 20px 16px;
+  }
+  .master-classes-info {
+    padding: 56px 0;
+  }
+  .master-classes__card {
+    max-width: 100%;
+    border-width: 8px;
+    border-radius: 18px;
+    padding: 20px;
+  }
+  .master-classes__card-title {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .master-classes__card-description, .master-classes__card-info {
+    margin-bottom: 16px;
+  }
+  .master-classes__form {
+    padding: 24px 14px;
+  }
+  .master-classes__form-header h3, .master-classes__form-header .h3 {
+    font-size: 30px;
+  }
+  .master-classes__form-header p {
+    font-size: 18px;
+  }
+  .master-classes .form-section {
+    padding: 56px 0;
+  }
+  .master-classes .example-works {
+    margin-bottom: 56px;
+  }
+  .master-classes .example-works h2, .master-classes .example-works .h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
 .subscription__header {
   display: flex;
   justify-content: center;
@@ -11811,7 +12234,7 @@ textarea.form-control-lg {
   text-transform: uppercase;
 }
 .subscription__main {
-  background-image: url("images/subscription_header_bg.png");
+  background-image: url("../images/subscription_header_bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11873,6 +12296,46 @@ textarea.form-control-lg {
 .subscription .form-section {
   padding: 140px 0;
 }
+@media (max-width: 767.98px) {
+  .subscription__header {
+    padding: 56px 0 32px;
+  }
+  .subscription__header h1, .subscription__header .h1 {
+    font-size: 32px;
+    padding: 20px 16px;
+  }
+  .subscription__main {
+    padding-bottom: 56px;
+  }
+  .subscription__main-description {
+    margin-bottom: 28px;
+  }
+  .subscription__card {
+    max-width: 100%;
+    border-width: 8px;
+    border-radius: 18px;
+    padding: 20px;
+  }
+  .subscription__card-title {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .subscription__card-description, .subscription__card-info {
+    margin-bottom: 16px;
+  }
+  .subscription__form {
+    padding: 24px 14px;
+  }
+  .subscription__form-header h3, .subscription__form-header .h3 {
+    font-size: 30px;
+  }
+  .subscription__form-header p {
+    font-size: 18px;
+  }
+  .subscription .form-section {
+    padding: 56px 0;
+  }
+}
 .holidays__header {
   display: flex;
   justify-content: center;
@@ -11920,7 +12383,7 @@ textarea.form-control-lg {
   padding: 140px 0;
 }
 .holidays__cards {
-  background-image: url("images/holidays-red-bg.png");
+  background-image: url("../images/holidays-red-bg.png");
   padding: 140px 0;
 }
 .holidays__cards-header {
@@ -11956,8 +12419,55 @@ textarea.form-control-lg {
 .holidays__photos {
   padding: 140px 0 0 0;
 }
+@media (max-width: 767.98px) {
+  .holidays__header {
+    padding: 56px 0 32px;
+  }
+  .holidays__header h1, .holidays__header .h1 {
+    font-size: 32px;
+    padding: 20px 16px;
+  }
+  .holidays__main-description {
+    margin-bottom: 28px;
+    font-size: 24px;
+  }
+  .holidays__form {
+    padding: 24px 14px;
+  }
+  .holidays__form-header h3, .holidays__form-header .h3 {
+    font-size: 30px;
+  }
+  .holidays__form-header p {
+    font-size: 18px;
+  }
+  .holidays .form-section {
+    padding: 56px 0;
+  }
+  .holidays__cards {
+    padding: 56px 0;
+  }
+  .holidays__cards-header h2, .holidays__cards-header .h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .holidays__card {
+    border-width: 8px;
+    border-radius: 18px;
+    padding: 24px 16px;
+  }
+  .holidays__card-title {
+    font-size: 28px;
+  }
+  .holidays__photos {
+    padding-top: 56px;
+  }
+  .holidays__photos-header h2, .holidays__photos-header .h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
 .contacts__main {
-  background-image: url("images/subscription_header_bg.png");
+  background-image: url("../images/subscription_header_bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12030,10 +12540,65 @@ textarea.form-control-lg {
   color: #000000;
   margin-bottom: 70px;
 }
+@media (max-width: 767.98px) {
+  .contacts__main {
+    padding-bottom: 56px;
+  }
+  .contacts__main-description {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .contacts__header {
+    padding: 56px 0 32px;
+  }
+  .contacts__header h1, .contacts__header .h1 {
+    font-size: 32px;
+    padding: 20px 16px;
+  }
+  .contacts .placement__info {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+  .contacts .placement__info p {
+    font-size: 18px;
+  }
+  .contacts__socials {
+    text-align: center;
+  }
+  .contacts__socials a img {
+    width: 32px;
+    height: 32px;
+  }
+  .contacts__form {
+    padding: 56px 0;
+  }
+  .contacts__form h2, .contacts__form .h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .contacts__form-privacy {
+    font-size: 13px;
+  }
+}
 body {
   color: #000;
   font-size: 24px;
   background-color: var(--studio-cream);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 991.98px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  body {
+    font-size: 16px;
+  }
 }.tns-outer{padding:0 !important}.tns-outer [hidden]{display:none !important}.tns-outer [aria-controls],.tns-outer [data-action]{cursor:pointer}.tns-slider{-webkit-transition:all 0s;-moz-transition:all 0s;transition:all 0s}.tns-slider>.tns-item{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.tns-horizontal.tns-subpixel{white-space:nowrap}.tns-horizontal.tns-subpixel>.tns-item{display:inline-block;vertical-align:top;white-space:normal}.tns-horizontal.tns-no-subpixel:after{content:'';display:table;clear:both}.tns-horizontal.tns-no-subpixel>.tns-item{float:left}.tns-horizontal.tns-carousel.tns-no-subpixel>.tns-item{margin-right:-100%}.tns-no-calc{position:relative;left:0}.tns-gallery{position:relative;left:0;min-height:1px}.tns-gallery>.tns-item{position:absolute;left:-100%;-webkit-transition:transform 0s, opacity 0s;-moz-transition:transform 0s, opacity 0s;transition:transform 0s, opacity 0s}.tns-gallery>.tns-slide-active{position:relative;left:auto !important}.tns-gallery>.tns-moving{-webkit-transition:all 0.25s;-moz-transition:all 0.25s;transition:all 0.25s}.tns-autowidth{display:inline-block}.tns-lazy-img{-webkit-transition:opacity 0.6s;-moz-transition:opacity 0.6s;transition:opacity 0.6s;opacity:0.6}.tns-lazy-img.tns-complete{opacity:1}.tns-ah{-webkit-transition:height 0s;-moz-transition:height 0s;transition:height 0s}.tns-ovh{overflow:hidden}.tns-visually-hidden{position:absolute;left:-10000em}.tns-transparent{opacity:0;visibility:hidden}.tns-fadeIn{opacity:1;filter:alpha(opacity=100);z-index:0}.tns-normal,.tns-fadeOut{opacity:0;filter:alpha(opacity=0);z-index:-1}.tns-vpfix{white-space:nowrap}.tns-vpfix>div,.tns-vpfix>li{display:inline-block}.tns-t-subp2{margin:0 auto;width:310px;position:relative;height:10px;overflow:hidden}.tns-t-ct{width:2333.3333333%;width:-webkit-calc(100% * 70 / 3);width:-moz-calc(100% * 70 / 3);width:calc(100% * 70 / 3);position:absolute;right:0}.tns-t-ct:after{content:'';display:table;clear:both}.tns-t-ct>div{width:1.4285714%;width:-webkit-calc(100% / 70);width:-moz-calc(100% / 70);width:calc(100% / 70);height:10px;float:left}
 
 /*# sourceMappingURL=sourcemaps/tiny-slider.css.map */
